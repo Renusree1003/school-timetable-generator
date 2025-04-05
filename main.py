@@ -52,9 +52,16 @@ def generate_timetable():
         dict: A data structure representing the complete timetable
               Format: {day: {period: {class: (subject, teacher)}}}
     """
+
+   
+
+    
     # Initialize an empty timetable
     timetable = {day: {period: {} for period in range(1, periods_per_day + 1)} for day in days_of_week}
     
+    
+
+
     # TODO: Implement the timetable generation algorithm
     # 1. Check if a valid timetable is possible with the given constraints
     # 2. Assign subjects and teachers to periods for each class
@@ -74,6 +81,7 @@ def display_timetable(timetable):
     # Display the timetable for each class
     # Display the timetable for each teacher
     pass
+
 
 
 def validate_timetable(timetable):
